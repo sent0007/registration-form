@@ -14,13 +14,12 @@
 
   <section class="gutter max-length">
     <div>
-      <h1 class="push-0 pad-t-2">Want to go to Mars?</h1>
-      <hr>
+      <h1 class="border push pad-t-2 not-bold">Want to go to Mars?</h1>
       <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
     </div>
     <form method="post" action="http://formspree.io/curtissentner@gmail.com">
       <fieldset class="grid">
-        <legend class="unit italic giga push-1-2">Personal details</legend>
+        <legend class="unit italic giga push">Personal details</legend>
         <div class="pad-right push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
           <label for="name">Name</label>
           <input id="name" name="name" required>
@@ -31,7 +30,7 @@
         </div>
         <div class="pad-right push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
           <label for="email">Email</label>
-          <input id="email" type="email" placeholder="" name="email" required>
+          <input id="email" type="email" name="email" required>
         </div>
         <div class="pad-left push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
           <label for="physical-fitness">Physical fitness</label>
@@ -53,7 +52,7 @@
           <label for="why">Why do you want to go to Mars?</label>
           <textarea id="why" name="message" required></textarea>
         </div>
-        <div>
+        <div class="center-flow push-2">
           <button class="btn btn-dark" type="submit">Register for the trip! </button>
           <input type="hidden" name="_subject" value="Request to join the mission">
         </div>

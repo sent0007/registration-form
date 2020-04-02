@@ -1,9 +1,14 @@
 html {
   font-family: "Open Sans", sans-serif;
+  background-color: #f2f2f2;
 }
 
-fieldset legend {
-  padding-bottom: .5rem;
+section {
+  background-color: #fff;
+}
+
+.border {
+  border-bottom: 1px solid #000;
 }
 
 @media only screen and (min-width: 60em) {
