@@ -15,10 +15,12 @@ section {
 
   .pad-right {
     padding-right: .5em;
+    width: 50%;
   }
 
   .pad-left {
     padding-left: .5em;
+    width: 50%;
   }
 
 }
