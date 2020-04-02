@@ -3,58 +3,61 @@
 <head>
   <meta charset="utf-8">
   <title>Registration form</title>
-  <link href="css/type.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
   <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
 
-  <section class="gutter">
+  <section class="gutter max-length">
     <div>
-      <h1 class="push-0">Want to go to Mars?</h1>
+      <h1 class="push-0 pad-t-2">Want to go to Mars?</h1>
       <hr>
       <p class="mega">We’re looking for super-awesome human beings who want to make the long trek to Mars for the adventure of a lifetime.</p>
     </div>
-    <form class="" method="post" action="http://formspree.io/curtissentner@gmail.com">
-    <fieldset>
-      <legend class="italic mega">Personal details</legend>
-      <div class="push">
-        <label for="name">Name</label>
-        <input id="name" name="name" required>
-      </div>
-      <div class="push">
-        <label for="age">Age</label>
-        <input id="age" type="number" required>
-      </div>
-      <div class="push">
-        <label for="email">Email</label>
-        <input id="email" type="email" placeholder="me@me.com" name="email" required>
-      </div>
-      <div class="push">
-        <label for="physical-fitness">Physical fitness</label>
-        <select id="physical-fitness" name="_physical-fitness">
-          <option>Super-human</option>
-          <option>Fit as a fiddle</option>
-          <option>Not terribly strong</option>
-          <option>A little couch-potato-y</option>
-        </select>
-      </div>
-      <div class="push">
-        <label for="address">Address</label>
-        <textarea id="address" name="message" required></textarea>
-      </div>
+    <form method="post" action="http://formspree.io/curtissentner@gmail.com">
+      <fieldset class="grid">
+        <legend class="unit italic giga push-1-2">Personal details</legend>
+        <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+          <label for="name">Name</label>
+          <input id="name" name="name" required>
+        </div>
+        <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+          <label for="age">Age</label>
+          <input id="age" type="number" required>
+        </div>
+        <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="" name="email" required>
+        </div>
+        <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2">
+          <label for="physical-fitness">Physical fitness</label>
+          <select id="physical-fitness" name="_physical-fitness">
+            <option>Super-human</option>
+            <option>Fit as a fiddle</option>
+            <option>Not terribly strong</option>
+            <option>A little couch-potato-y</option>
+          </select>
+        </div>
+        <div class="push unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1 unit-xl-1">
+          <label for="address">Address</label>
+          <textarea id="address" name="message" required></textarea>
+        </div>
+      </fieldset>
       <fieldset>
-        <legend class="italic mega">Mission statement</legend>
+        <legend class="italic giga push-1-2">Mission statement</legend>
         <div class="push">
           <label for="why">Why do you want to go to Mars?</label>
           <textarea id="why" name="message" required></textarea>
         </div>
         <div>
-          <button class="btn btn-dark" type="submit">Register for the trip!</button>
+          <button class="btn btn-dark" type="submit">Register for the trip! </button>
+          <input type="hidden" name="_subject" value="Request to join the mission">
         </div>
+
       </fieldset>
     </form>
   </section>

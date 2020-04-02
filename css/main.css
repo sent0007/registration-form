@@ -1,7 +1,11 @@
 html {
-  font-family: "Open Sans", serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+fieldset legend {
+  padding-bottom: .5rem;
+}
+
+@media only screen and (min-width: 60em) {
+
 }
